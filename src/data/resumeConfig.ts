@@ -70,7 +70,7 @@ export const resumeConfig: ResumeConfig = {
         {
           title: "Digital Transformation Lead (Volunteer / Project)",
           organization: "Volunteer Fire Department",
-          dateRange: "2025–present",
+          dateRange: "2025–Present",
           description: "Department digitization and operational modernization initiative.",
           bullets: [
             "Led digitization of internal processes to improve reliability, access, and operational readiness.",
