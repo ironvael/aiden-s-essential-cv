@@ -337,7 +337,7 @@
 /* Print Styles */
 @media print {
   @page {
-    size: Letter;
+    size: A4;
     margin: 0.6in;
   }
 
