@@ -1,13 +1,13 @@
 import Resume from "@/components/Resume";
 import SEOHead from "@/components/SEOHead";
 
-const Index = () => {
+const PlainResume = () => {
   return (
     <main className="page-wrapper">
       <SEOHead />
-      <Resume showButton={true} minimal={false} />
+      <Resume showButton={false} minimal={true} />
     </main>
   );
 };
 
-export default Index;
+export default PlainResume;
