@@ -59,9 +59,8 @@ export const resumeConfig: ResumeConfig = {
         {
           title: "Founder",
           organization: "Ironvael",
-          dateRange: "20XX–Present",
-          description:
-            "Venture studio / operating vehicle for building and iterating products and systems.",
+          dateRange: "2025–Present",
+          description: "Venture studio / operating vehicle for building and iterating products and systems.",
           bullets: [
             "Build and iterate early-stage initiatives across software, operations, and digital infrastructure.",
             "Translate ideas into scoped plans, testable builds, and repeatable execution systems.",
@@ -71,9 +70,8 @@ export const resumeConfig: ResumeConfig = {
         {
           title: "Digital Transformation Lead (Volunteer / Project)",
           organization: "Volunteer Fire Department",
-          dateRange: "20XX–20XX",
-          description:
-            "Department digitization and operational modernization initiative.",
+          dateRange: "2025–present",
+          description: "Department digitization and operational modernization initiative.",
           bullets: [
             "Led digitization of internal processes to improve reliability, access, and operational readiness.",
             "Designed practical workflows and documentation to reduce friction and standardize execution.",
@@ -88,7 +86,7 @@ export const resumeConfig: ResumeConfig = {
         {
           title: "Volunteer Firefighter",
           organization: "Volunteer Fire Department",
-          dateRange: "20XX–Present",
+          dateRange: "2025–Present",
           bullets: [
             "Operate in high-stress environments requiring disciplined execution, teamwork, and fast decision-making.",
             "Support operational readiness through training, standardization, and reliable follow-through.",
@@ -97,7 +95,7 @@ export const resumeConfig: ResumeConfig = {
         {
           title: "Helicopter Rescue Swimmer",
           organization: "United States Navy",
-          dateRange: "20XX–20XX",
+          dateRange: "2020–2024",
           bullets: [
             "Executed mission-critical responsibilities in dynamic, high-risk environments where precision matters.",
             "Operated as part of tightly coordinated teams under time pressure and uncertainty.",
@@ -106,7 +104,7 @@ export const resumeConfig: ResumeConfig = {
         {
           title: "MH-60S Subject Matter Expert (SME)",
           organization: "Curriculum Development & Instruction",
-          dateRange: "20XX–20XX",
+          dateRange: "2024–2024",
           bullets: [
             "Developed and delivered training curriculum to support standardization and high-performance execution.",
             "Improved instructional clarity and consistency by translating complex procedures into teachable systems.",
@@ -115,7 +113,7 @@ export const resumeConfig: ResumeConfig = {
         {
           title: "MQ-8C Mission Payload Operator",
           organization: "U.S. Navy",
-          dateRange: "20XX–20XX",
+          dateRange: "2023-2024",
           bullets: [
             "Operated mission payload systems with high attention to detail, coordination, and operational discipline.",
             "Supported mission outcomes through technical proficiency, communication, and procedural compliance.",
@@ -127,18 +125,15 @@ export const resumeConfig: ResumeConfig = {
   skills: [
     {
       category: "Operations",
-      items:
-        "Process design, SOPs, systems thinking, execution under pressure, training standardization",
+      items: "Process design, SOPs, systems thinking, execution under pressure, training standardization",
     },
     {
       category: "Digital Systems",
-      items:
-        "Web development, tooling selection, workflow digitization, documentation, basic automation",
+      items: "Web development, tooling selection, workflow digitization, documentation, basic automation",
     },
     {
       category: "Leadership",
-      items:
-        "Team coordination, instruction, stakeholder alignment, high-accountability environments",
+      items: "Team coordination, instruction, stakeholder alignment, high-accountability environments",
     },
   ],
   education: {
@@ -147,8 +142,7 @@ export const resumeConfig: ResumeConfig = {
   },
   meta: {
     title: "Aiden Hovren — Resume",
-    description:
-      "Entrepreneur, operator, and systems builder. Resume and CV for Aiden Hovren.",
+    description: "Entrepreneur, operator, and systems builder. Resume and CV for Aiden Hovren.",
     canonicalUrl: "https://cv.aidenhovren.com",
   },
 };
