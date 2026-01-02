@@ -2,95 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 0 0% 8%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 0 0% 8%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 8%;
+    --primary: 0 0% 8%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 8%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 0 0% 8%;
+    --radius: 0.25rem;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Resume specific tokens */
+    --resume-max-width: 820px;
+    --resume-heading: 0 0% 5%;
+    --resume-text: 0 0% 15%;
+    --resume-muted: 0 0% 40%;
+    --resume-rule: 0 0% 85%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 0 0% 8%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 8%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 85%;
   }
 }
 
@@ -100,6 +62,412 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+}
+
+/* Resume Layout */
+.page-wrapper {
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+}
+
+.resume-container {
+  max-width: var(--resume-max-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Print Button */
+.print-button-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.print-button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: hsl(var(--resume-muted));
+  background: transparent;
+  border: 1px solid hsl(var(--border));
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.print-button:hover {
+  color: hsl(var(--foreground));
+  border-color: hsl(var(--foreground));
+}
+
+/* Resume Header */
+.resume-header {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid hsl(var(--resume-rule));
+  margin-bottom: 1.5rem;
+}
+
+.resume-name {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: hsl(var(--resume-heading));
+  margin: 0 0 0.25rem 0;
+}
+
+.resume-headline {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem;
+  color: hsl(var(--resume-muted));
+  margin: 0 0 0.75rem 0;
+  letter-spacing: 0.03em;
+}
+
+.resume-meta {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.875rem;
+  color: hsl(var(--resume-muted));
+  margin: 0;
+}
+
+.meta-separator {
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+.resume-link {
+  color: hsl(var(--resume-text));
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.resume-link:hover {
+  border-bottom-color: hsl(var(--resume-text));
+}
+
+/* Sections */
+.resume-section {
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid hsl(var(--resume-rule));
+}
+
+.resume-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.section-title {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: hsl(var(--resume-muted));
+  margin: 0 0 1rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.resume-summary {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: hsl(var(--resume-text));
+  margin: 0;
+}
+
+/* Experience Entries */
+.entry {
+  margin-bottom: 1.25rem;
+  page-break-inside: avoid;
+}
+
+.entry:last-child {
+  margin-bottom: 0;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.entry-title-line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.entry-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: hsl(var(--resume-heading));
+}
+
+.entry-separator {
+  margin: 0 0.4rem;
+  color: hsl(var(--resume-muted));
+}
+
+.entry-org {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.9375rem;
+  color: hsl(var(--resume-text));
+}
+
+.entry-date {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.8125rem;
+  color: hsl(var(--resume-muted));
+  white-space: nowrap;
+}
+
+.entry-description {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: hsl(var(--resume-muted));
+  margin: 0 0 0.5rem 0;
+}
+
+.entry-bullets {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.entry-bullets li {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: hsl(var(--resume-text));
+  margin-bottom: 0.25rem;
+}
+
+.entry-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.skill-line {
+  font-size: 0.9375rem;
+  color: hsl(var(--resume-text));
+  margin: 0;
+}
+
+.skill-line strong {
+  font-weight: 600;
+  color: hsl(var(--resume-heading));
+}
+
+/* Education */
+.education-item {
+  font-size: 0.9375rem;
+  color: hsl(var(--resume-text));
+  margin: 0 0 0.25rem 0;
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .page-wrapper {
+    padding: 1rem;
+  }
+
+  .print-button-container {
+    position: static;
+    margin-bottom: 1.5rem;
+  }
+
+  .print-button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  .resume-name {
+    font-size: 1.75rem;
+  }
+
+  .entry-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.125rem;
+  }
+
+  .entry-title-line {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .entry-separator {
+    display: none;
+  }
+
+  .entry-org {
+    font-size: 0.875rem;
+    color: hsl(var(--resume-muted));
+  }
+}
+
+/* Print Styles */
+@media print {
+  @page {
+    size: Letter;
+    margin: 0.6in;
+  }
+
+  html, body {
+    font-size: 11pt;
+    line-height: 1.4;
+    background: white !important;
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page-wrapper {
+    padding: 0;
+    min-height: auto;
+  }
+
+  .resume-container {
+    max-width: 100%;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .resume-header {
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .resume-name {
+    font-size: 18pt;
+    color: black;
+  }
+
+  .resume-headline {
+    font-size: 10pt;
+    color: #444;
+  }
+
+  .resume-meta {
+    font-size: 9pt;
+    color: #555;
+  }
+
+  .resume-section {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-title {
+    font-size: 8pt;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  .resume-summary {
+    font-size: 10pt;
+    line-height: 1.5;
+    color: #222;
+  }
+
+  .entry {
+    margin-bottom: 0.75rem;
+    page-break-inside: avoid;
+  }
+
+  .entry-title {
+    font-size: 10pt;
+    color: black;
+  }
+
+  .entry-org {
+    font-size: 10pt;
+    color: #333;
+  }
+
+  .entry-date {
+    font-size: 9pt;
+    color: #555;
+  }
+
+  .entry-description {
+    font-size: 9pt;
+    color: #555;
+  }
+
+  .entry-bullets {
+    padding-left: 1rem;
+  }
+
+  .entry-bullets li {
+    font-size: 10pt;
+    line-height: 1.4;
+    color: #222;
+    margin-bottom: 0.125rem;
+  }
+
+  .skill-line {
+    font-size: 10pt;
+    color: #222;
+  }
+
+  .skill-line strong {
+    color: black;
+  }
+
+  .education-item {
+    font-size: 10pt;
+    color: #222;
+  }
+
+  /* Show URLs in print */
+  .resume-link[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #666;
+  }
+
+  /* Prevent orphans and widows */
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2 {
+    page-break-after: avoid;
+  }
+
+  .resume-section {
+    page-break-inside: avoid;
   }
 }
