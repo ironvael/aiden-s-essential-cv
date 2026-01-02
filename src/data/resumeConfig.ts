@@ -47,7 +47,7 @@ export const resumeConfig: ResumeConfig = {
     links: [
       { label: "aidenhovren.com", url: "https://aidenhovren.com" },
       { label: "LinkedIn", url: "https://linkedin.com/in/aidenhovren" },
-      { label: "GitHub", url: "https://github.com/aidenhovren" },
+      { label: "GitHub", url: "https://github.com/ahovren" },
     ],
   },
   summary:
@@ -88,8 +88,8 @@ export const resumeConfig: ResumeConfig = {
           organization: "Volunteer Fire Department",
           dateRange: "2025–Present",
           bullets: [
-            "Responded to emergency calls including fires and vehicle accidents; assisted in containment, operations, and hazard mitigation under high-stress conditions.",
-            "Maintained readiness through regular training in fire suppression and equipment operation; supported community safety initiatives and prevention programs.",
+            "Operate in high-stress environments requiring disciplined execution, teamwork, and fast decision-making.",
+            "Support operational readiness through training, standardization, and reliable follow-through.",
           ],
         },
         {
@@ -97,8 +97,8 @@ export const resumeConfig: ResumeConfig = {
           organization: "United States Navy",
           dateRange: "2020–2024",
           bullets: [
-            "Coordinated flight operations and instructor-led training across 12 rotary-wing squadrons, supporting 300+ aircrew and pilots alongside Weapons \& Tactics instructors to optimize mission scheduling, resource allocation, and operational readiness.",
-            "Served as a Squadron Search and Rescue (SAR) Instructor for 30 aircrewmen, leading rescue training evolutions, maintaining qualifications and currencies, and ensuring compliance with Navy aviation and safety standards.",
+            "Executed mission-critical responsibilities in dynamic, high-risk environments where precision matters.",
+            "Operated as part of tightly coordinated teams under time pressure and uncertainty.",
           ],
         },
         {
@@ -106,8 +106,8 @@ export const resumeConfig: ResumeConfig = {
           organization: "Curriculum Development & Instruction",
           dateRange: "2024–2024",
           bullets: [
-            "Developed and implemented 20 technical training modules adopted by the US Navy, standardizing aviation safety and technical readiness.",
-            "Served as technical knowledge resource for aircrew operations and safety standards.",
+            "Developed and delivered training curriculum to support standardization and high-performance execution.",
+            "Improved instructional clarity and consistency by translating complex procedures into teachable systems.",
           ],
         },
         {
@@ -115,8 +115,8 @@ export const resumeConfig: ResumeConfig = {
           organization: "U.S. Navy",
           dateRange: "2023-2024",
           bullets: [
-            "Operated and monitored mission payload systems, ensuring system reliability, data accuracy, and adherence to security protocols.",
-            "Reviewed and annotated payload imagery to identify and classify targets and POIs; documented metadata and timestamps, then handed concise briefs to pilots to support mission decisions.",
+            "Operated mission payload systems with high attention to detail, coordination, and operational discipline.",
+            "Supported mission outcomes through technical proficiency, communication, and procedural compliance.",
           ],
         },
       ],
