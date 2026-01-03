@@ -25,25 +25,25 @@ const Resume = ({ showButton = true, minimal = false }: ResumeProps) => {
           "text-foreground antialiased",
         ].join(" ")}
       >
-        {/* Print button */}
-        {showButton && (
-          <div className="mb-6 flex justify-end print:hidden">
-            <button
-              onClick={handlePrint}
-              className={[
-                "inline-flex items-center gap-2 rounded-full",
-                "border border-border bg-background px-4 py-2",
-                "text-sm font-semibold text-foreground",
-                "shadow-sm transition-all",
-                "hover:-translate-y-[1px] hover:bg-accent hover:text-accent-foreground hover:shadow",
-                "active:translate-y-0",
-                "focus:outline-none focus-visible:ring-4 focus-visible:ring-ring/30",
-              ].join(" ")}
-            >
-              Download PDF <span className="text-muted-foreground">⌘P</span>
-            </button>
-          </div>
-        )}
+      {/* Print button */}
+      {showButton && (
+        <div className="mb-6 flex justify-end print:hidden">
+          <button
+            onClick={handlePrint}
+            className={[
+              "inline-flex items-center gap-2 rounded-full",
+              "border border-border bg-background px-4 py-2",
+              "text-sm font-semibold text-foreground",
+              "shadow-sm transition-all",
+              "hover:-translate-y-[1px] hover:bg-accent hover:text-accent-foreground hover:shadow",
+              "active:translate-y-0",
+              "focus:outline-none focus-visible:ring-4 focus-visible:ring-ring/30",
+            ].join(" ")}
+          >
+            Download PDF <span className="text-muted-foreground">⌘P</span>
+          </button>
+        </div>
+      )}
 
         {/* Header */}
         <header className="mb-6 border-b border-border pb-5 print:mb-4 print:pb-4">
