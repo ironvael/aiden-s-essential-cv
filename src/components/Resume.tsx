@@ -25,11 +25,12 @@ const Resume = ({ showButton = true, minimal = false }: ResumeProps) => {
           "text-foreground antialiased",
         ].join(" ")}
       >
-      {/* Print button */}
+      {/* Download PDF button */}
       {showButton && (
         <div className="mb-6 flex justify-end print:hidden">
-          <button
-            onClick={handlePrint}
+          <a
+            href="/Aiden-Hovren-Resume.pdf"
+            download
             className={[
               "inline-flex items-center gap-2 rounded-full",
               "border border-border bg-background px-4 py-2",
@@ -41,7 +42,7 @@ const Resume = ({ showButton = true, minimal = false }: ResumeProps) => {
             ].join(" ")}
           >
             Download PDF <span className="text-muted-foreground">⌘P</span>
-          </button>
+          </a>
         </div>
       )}
 
